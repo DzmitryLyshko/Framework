@@ -1,17 +1,10 @@
 expect = require('chai').expect;
-
 const PricingCalculatorPage = require('../../lib/pricing_calculator_page');
 const pricingCalculatorPage = new PricingCalculatorPage();
-const YopmailPage = require('../../lib/yopmail_page');
-const yopmailPage = new YopmailPage();
 const instance = require('../../config/instance');
 
 describe('pricing calculator page scenarios', function () {
   const searchQuery = 'Google Cloud Platform Pricing Calculator';
-  let emailAdress;
-  let savedRecievedBill;
-  let savedActualEstimatedCost;
-  const regexpGetPriceInDollarsFromText = /\bUSD\s\d*\,\d*\.\d*/;
 
   before(async function () {
     await pricingCalculatorPage.open();
@@ -36,32 +29,45 @@ describe('pricing calculator page scenarios', function () {
     await pricingCalculatorPage.selectDatacenterLocation(instance.datacenterLocation);
     await pricingCalculatorPage.selectCommitedUsage(instance.commitedUsage);
     await pricingCalculatorPage.clickAddToEstimateBtn();
-    savedActualEstimatedCost =
-      await pricingCalculatorPage.getActualEstimatedCost();
-    await pricingCalculatorPage.switchToNewTab();
-    await yopmailPage.acceptCookies();
-    await yopmailPage.generateRandomEmail();
-    emailAdress = await yopmailPage.getGeneratedEmail();
-    await browser.switchWindow('Google Cloud Pricing Calculator');
-    await pricingCalculatorPage.switchToIFrame();
-    await pricingCalculatorPage.clickEmailEstimateBtn();
-    await pricingCalculatorPage.scrollTo(pricingCalculatorPage.sendEmailBtn);
-    await pricingCalculatorPage.enterEmailAdress(emailAdress);
-    await pricingCalculatorPage.sendEmail();
-    await browser.switchWindow('yopmail');
-    await browser.pause(3000);
-    await yopmailPage.checkEmail();
-    await yopmailPage.switchToMailIFrame();
-    savedRecievedBill = await yopmailPage.getRecievedBill();
   });
 
-  it('Verify that Total Estimated Monthly Cost in the letter equals to the cost in the calculator', async function () {
-    const estimatedCost = String(savedActualEstimatedCost.match(regexpGetPriceInDollarsFromText));
-    const recievedBill = String(savedRecievedBill.match(regexpGetPriceInDollarsFromText));
-    expect(estimatedCost).to.equal(recievedBill);
+  it('Verify the correspondence of the data of the following field: VM Class', async function () {
+    expect(await pricingCalculatorPage.getActualVMClass()).to.equal(
+      'VM class: regular'
+    );
   });
 
-  after(async function () {
-    await pricingCalculatorPage.close();
+  it('Verify the correspondence of the data of the following field: Instance type', async function () {
+    expect(await pricingCalculatorPage.getActualInstanceType()).to.include(
+      'n1-standard-8'
+    );
   });
+
+  it('Verify the correspondence of the data of the following field: Region', async function () {
+    expect(await pricingCalculatorPage.getActualRegion()).to.equal(
+      'Region: Frankfurt'
+    );
+  });
+
+  it('Verify the correspondence of the data of the following field: local SSD', async function () {
+    expect(await pricingCalculatorPage.getActualLocalSSD()).to.include(
+      'Local SSD: 2x375 GiB'
+    );
+  });
+
+  it('Verify the correspondence of the data of the following field: commitment term', async function () {
+    expect(await pricingCalculatorPage.getActualCommitmentTerm()).to.equal(
+      'Commitment term: 1 Year'
+    );
+  });
+
+  it('Verify that the rental amount per month equals with the amount received when passing the test manually', async function () {
+    expect(await pricingCalculatorPage.getActualEstimatedCost()).to.equal(
+      'Total Estimated Cost: USD 1,082.77 per 1 month'
+    );
+  });
+
+    after(async function () {
+      await pricingCalculatorPage.close();
+    });
 });
