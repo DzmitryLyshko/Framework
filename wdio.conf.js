@@ -21,6 +21,16 @@ exports.config = {
   // will be called from there.
   //
   specs: ['./test/specs/**/*.js'],
+  // define specific suites
+  suites: {
+    smoke: [
+      './test/specs/test3.js',
+    ],
+    all: [
+      './test/specs/test3.js',
+      './test/specs/test4.js',
+    ]
+  },
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -97,7 +107,7 @@ exports.config = {
   baseUrl: 'http://localhost',
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 10000,
+  waitforTimeout: 20000,
   //
   // Default timeout in milliseconds for request
   // if browser driver or grid doesn't send response
@@ -226,8 +236,13 @@ exports.config = {
    * @param {Boolean} result.passed    true if test has passed, otherwise false
    * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
    */
-  // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-  // },
+  afterTest: function(test, context, { error, result, duration, passed, retries }) {
+    if (error) {
+      const currentDate = new Date();
+      let dateAndTime = " " + currentDate.getDate() + "-" + (currentDate.getMonth()+1) + "-" + currentDate.getFullYear() + " " + currentDate.getHours() + "-" + currentDate.getMinutes() + "-" + currentDate.getSeconds();
+      browser.saveScreenshot(`./screenshots/fail${dateAndTime}.png`)
+    }   
+  },
 
   /**
    * Hook that gets executed after the suite has ended
