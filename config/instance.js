@@ -9,17 +9,4 @@ let instance = {
   commitedUsage: "1 Year",
 };
 
-// if (process.env.TEST !== 'true') {
-//   instance = {
-//     numberOfInstances: 8,
-//     instanceSeries: "N1",
-//     instanceMachineType: "n1-standard-16",
-//     gpuType: "NVIDIA Tesla P4",
-//     numberOfGPUs: "4",
-//     localSSD: "4x375 GB",
-//     datacenterLocation: "Frankfurt (europe-west3)",
-//     commitedUsage: "1 Year",
-//   }
-// };
 module.exports = instance;
-
