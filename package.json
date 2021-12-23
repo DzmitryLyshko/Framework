@@ -4,6 +4,8 @@
     "private": true,
     "devDependencies": {
         "@wdio/cli": "^7.16.11",
+        "@wdio/dot-reporter": "^7.16.11",
+        "@wdio/junit-reporter": "^7.16.12",
         "@wdio/local-runner": "^7.16.11",
         "@wdio/mocha-framework": "^7.16.11",
         "@wdio/selenium-standalone-service": "^7.16.11",
@@ -12,5 +14,8 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js"
+    },
+    "dependencies": {
+        "yargs": "^17.3.0"
     }
 }
