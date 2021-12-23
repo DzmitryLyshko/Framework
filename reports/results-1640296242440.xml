@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-23T23:50:46" time="37.368" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="chrome.96_0_4664_110.windows"/>
+      <property name="file" value=".\test\specs\test3.js"/>
+    </properties>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="36.871">
+      <failure/>
+      <error message="element (&quot;//md-option[contains(@id, &quot;select_option&quot;)]/div[contains(text(), &quot;n1-standard-8&quot;)]&quot;) still not existing after 20000ms"/>
+      <system-err><![CDATA[
+Error: element ("//md-option[contains(@id, "select_option")]/div[contains(text(), "n1-standard-8")]") still not existing after 20000ms
+    at C:\Study\EPAM\Framework\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async Element.elementErrorHandlerCallbackFn (C:\Study\EPAM\Framework\node_modules\webdriverio\build\middlewares.js:24:32)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async Element.elementErrorHandlerCallbackFn (C:\Study\EPAM\Framework\node_modules\webdriverio\build\middlewares.js:24:32)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async PricingCalculatorPage.selectInstanceMachineType (C:\Study\EPAM\Framework\lib\pricing_calculator_page.js:108:5)
+    at async Context.<anonymous> (C:\Study\EPAM\Framework\test\specs\test3.js:18:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>"//md-list-item/div[contains(text(), \"Region\")]"}
+COMMAND: GET /session/8b2a4862-8927-4c65-b185-9c8506992511/element/95bec454-2308-4e81-a252-b81365cb25de/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field local SSD" time="0.041">
+      <system-out><![CDATA[
+COMMAND: POST /session/8b2a4862-8927-4c65-b185-9c8506992511/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+COMMAND: GET /session/8b2a4862-8927-4c65-b185-9c8506992511/element/34f3a1ec-8039-4764-a460-83581a56702b/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field commitment term" time="0.019">
+      <system-out><![CDATA[
+COMMAND: POST /session/8b2a4862-8927-4c65-b185-9c8506992511/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+COMMAND: GET /session/8b2a4862-8927-4c65-b185-9c8506992511/element/29638f06-5fa3-4ff8-ad5a-3057bb6aa507/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify that the rental amount per month equals with the amount received when passing the test manually" time="0.023">
+      <system-out><![CDATA[
+COMMAND: POST /session/8b2a4862-8927-4c65-b185-9c8506992511/element - {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+RESULT: {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+COMMAND: GET /session/8b2a4862-8927-4c65-b185-9c8506992511/element/fb2208d9-4bb6-48c0-b6e9-08d081b04837/text - {}
+RESULT: {}
+COMMAND: DELETE /session/8b2a4862-8927-4c65-b185-9c8506992511 - {}
+RESULT: {}
+COMMAND: DELETE /session/8b2a4862-8927-4c65-b185-9c8506992511 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

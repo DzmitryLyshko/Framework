@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-24T00:30:27" time="23.632" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="chrome.96_0_4664_110.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="23.266">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;//div[@class=&quot;gs-title&quot;]//*[text()=&quot;Google Cloud Platform Pricing Calculator&quot;]&quot; because element wasn't found"/>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//div[@class="gs-title"]//*[text()="Google Cloud Platform Pricing Calculator"]" because element wasn't found
+    at implicitWait (C:\Study\EPAM\Framework\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+    at async Element.elementErrorHandlerCallbackFn (C:\Study\EPAM\Framework\node_modules\webdriverio\build\middlewares.js:20:29)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async PricingCalculatorPage.choosePricingCalculator (C:\Study\EPAM\Framework\lib\pricing_calculator_page.js:82:5)
+    at async Context.<anonymous> (C:\Study\EPAM\Framework\test\specs\test4.js:21:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>ut>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field Region" time="0.044">
+      <system-out><![CDATA[
+COMMAND: POST /session/5924a3f3c3e75af479adc97f229c0b3a/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+COMMAND: GET /session/5924a3f3c3e75af479adc97f229c0b3a/element/6020ae0b-73aa-4886-82b0-a7fcfb310e55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field local SSD" time="0.051">
+      <system-out><![CDATA[
+COMMAND: POST /session/5924a3f3c3e75af479adc97f229c0b3a/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+COMMAND: GET /session/5924a3f3c3e75af479adc97f229c0b3a/element/f23819cc-308e-48d5-b1cf-1ef50710ba99/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field commitment term" time="0.037">
+      <system-out><![CDATA[
+COMMAND: POST /session/5924a3f3c3e75af479adc97f229c0b3a/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+COMMAND: GET /session/5924a3f3c3e75af479adc97f229c0b3a/element/3b973b76-0692-4f3e-9886-71893246f572/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify that the rental amount per month equals with the amount received when passing the test manually" time="0.033">
+      <system-out><![CDATA[
+COMMAND: POST /session/5924a3f3c3e75af479adc97f229c0b3a/element - {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+RESULT: {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+COMMAND: GET /session/5924a3f3c3e75af479adc97f229c0b3a/element/3e1e9003-9a8b-481b-9faf-f521bf634ab2/text - {}
+RESULT: {}
+COMMAND: DELETE /session/5924a3f3c3e75af479adc97f229c0b3a - {}
+RESULT: {}
+COMMAND: DELETE /session/5924a3f3c3e75af479adc97f229c0b3a - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

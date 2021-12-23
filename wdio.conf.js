@@ -1,4 +1,4 @@
-const yargs = require('yargs').argv;
+const options = require('./config/arguments');
 
 exports.config = {
   //
@@ -66,7 +66,7 @@ exports.config = {
       // 5 instances get started at a time.
       maxInstances: 5,
       //
-      browserName: yargs.browser || 'chrome',
+      browserName: options.browser || 'chrome',
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.

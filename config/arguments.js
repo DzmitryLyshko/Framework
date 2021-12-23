@@ -1,5 +1,5 @@
 const options = require('yargs')
-    .scriptName('npm test')
+    .scriptName('npx wdio run wdio.conf.js')
     .option('b', {
         alias: 'browser',
         type: 'string',

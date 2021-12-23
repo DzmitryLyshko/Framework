@@ -1,4 +1,5 @@
 expect = require('chai').expect;
+const yargs = require('yargs').argv;
 
 const PricingCalculatorPage = require('../../lib/pricing_calculator_page');
 const pricingCalculatorPage = new PricingCalculatorPage();

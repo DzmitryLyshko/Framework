@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-23T23:52:38" time="38.295" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="36.319">
+      <failure/>
+      <error message="Element &lt;button class=&quot;md but text f24 egenbut&quot;> is not clickable at point (1104,651) because another element &lt;div id=&quot;cons-pop&quot; class=&quot;explicit&quot;> obscures it"/>
+      <system-err><![CDATA[
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:181:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:280:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:200:24
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>:"//md-list-item/div[contains(text(), \"Instance type\")]"}
+COMMAND: GET /session/a235de2c-aece-4e8e-92ff-874011a09438/element/9bff8846-ce50-4843-a8e7-38335e31edd4/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field Region" time="0.069">
+      <system-out><![CDATA[
+COMMAND: POST /session/a235de2c-aece-4e8e-92ff-874011a09438/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+COMMAND: GET /session/a235de2c-aece-4e8e-92ff-874011a09438/element/0243167a-0785-4e62-a3f0-312b93922455/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field local SSD" time="0.058">
+      <system-out><![CDATA[
+COMMAND: POST /session/a235de2c-aece-4e8e-92ff-874011a09438/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+COMMAND: GET /session/a235de2c-aece-4e8e-92ff-874011a09438/element/5b9e960a-10f1-4995-957b-683b9f87585c/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field commitment term" time="0.07">
+      <system-out><![CDATA[
+COMMAND: POST /session/a235de2c-aece-4e8e-92ff-874011a09438/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+COMMAND: GET /session/a235de2c-aece-4e8e-92ff-874011a09438/element/43993238-3311-4603-ad52-569b21f63c2b/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify that the rental amount per month equals with the amount received when passing the test manually" time="0.053">
+      <system-out><![CDATA[
+COMMAND: POST /session/a235de2c-aece-4e8e-92ff-874011a09438/element - {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+RESULT: {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+COMMAND: GET /session/a235de2c-aece-4e8e-92ff-874011a09438/element/0afa515c-9d5c-4794-b07b-75e9e56302fb/text - {}
+RESULT: {}
+COMMAND: DELETE /session/a235de2c-aece-4e8e-92ff-874011a09438 - {}
+RESULT: {}
+COMMAND: DELETE /session/a235de2c-aece-4e8e-92ff-874011a09438 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>s>
