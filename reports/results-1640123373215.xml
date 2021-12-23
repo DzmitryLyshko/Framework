@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-21T23:49:41" time="32.854" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test3.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="28.323">
+      <failure/>
+      <error message="Element &lt;div class=&quot;md-text ng-binding&quot;> could not be scrolled into view"/>
+      <system-err><![CDATA[
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:181:5
+ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:156:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:200:24
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

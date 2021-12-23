@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T02:56:13" time="32.349" tests="6" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test3.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field VM Class" time="0.462">
+      <system-out><![CDATA[
+COMMAND: POST /session/659e780c-3532-4dd0-98fc-93b778b1e870/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"VM class\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"VM class\")]"}
+COMMAND: GET /session/659e780c-3532-4dd0-98fc-93b778b1e870/element/6e4c412b-6126-4ec0-8c3c-4bacefe688ab/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field Instance type" time="0.197">
+      <system-out><![CDATA[
+COMMAND: POST /session/659e780c-3532-4dd0-98fc-93b778b1e870/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Instance type\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Instance type\")]"}
+COMMAND: GET /session/659e780c-3532-4dd0-98fc-93b778b1e870/element/54794898-3991-4c7b-a02d-af714c9217c7/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field Region" time="0.057">
+      <system-out><![CDATA[
+COMMAND: POST /session/659e780c-3532-4dd0-98fc-93b778b1e870/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+COMMAND: GET /session/659e780c-3532-4dd0-98fc-93b778b1e870/element/0362360d-7090-4d8f-bb8f-41a802e27c55/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field local SSD" time="0.081">
+      <system-out><![CDATA[
+COMMAND: POST /session/659e780c-3532-4dd0-98fc-93b778b1e870/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+COMMAND: GET /session/659e780c-3532-4dd0-98fc-93b778b1e870/element/03d6b090-08ef-475b-9620-a38bb0d059aa/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field commitment term" time="0.053">
+      <system-out><![CDATA[
+COMMAND: POST /session/659e780c-3532-4dd0-98fc-93b778b1e870/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+COMMAND: GET /session/659e780c-3532-4dd0-98fc-93b778b1e870/element/13edc4af-8fa8-423f-967d-31a88d79f4a3/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify that the rental amount per month equals with the amount received when passing the test manually" time="0.057">
+      <system-out><![CDATA[
+COMMAND: POST /session/659e780c-3532-4dd0-98fc-93b778b1e870/element - {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+RESULT: {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+COMMAND: GET /session/659e780c-3532-4dd0-98fc-93b778b1e870/element/55b36483-c33f-421f-960f-11a0eccf4ab9/text - {}
+RESULT: {}
+COMMAND: DELETE /session/659e780c-3532-4dd0-98fc-93b778b1e870 - {}
+RESULT: {}
+COMMAND: DELETE /session/659e780c-3532-4dd0-98fc-93b778b1e870 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

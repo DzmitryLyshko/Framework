@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T03:34:30" time="57.557" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="chrome.96_0_4664_110.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="56.929">
+      <failure/>
+      <error message="invalid argument: missing 'ELEMENT'&#xA;  (Session info: chrome=96.0.4664.110)"/>
+      <system-err><![CDATA[
+Backtrace:
+	Ordinal0 [0x00826903+2517251]
+	Ordinal0 [0x007BF8E1+2095329]
+	Ordinal0 [0x006C2848+1058888]
+	Ordinal0 [0x00716FEA+1404906]
+	Ordinal0 [0x007064D3+1336531]
+	Ordinal0 [0x00715BBF+1399743]
+	Ordinal0 [0x0070639B+1336219]
+	Ordinal0 [0x006E27A7+1189799]
+	Ordinal0 [0x006E3609+1193481]
+	GetHandleVerifier [0x009B5904+1577972]
+	GetHandleVerifier [0x00A60B97+2279047]
+	GetHandleVerifier [0x008B6D09+534521]
+	GetHandleVerifier [0x008B5DB9+530601]
+	Ordinal0 [0x007C4FF9+2117625]
+	Ordinal0 [0x007C98A8+2136232]
+	Ordinal0 [0x007C99E2+2136546]
+	Ordinal0 [0x007D3541+2176321]
+	BaseThreadInitThunk [0x7675FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76EC7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76EC7A6E+238]
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>specs\test3.js:13:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field Region" time="0.068">
+      <system-out><![CDATA[
+COMMAND: POST /session/a2dbb14dac29732dadc4205c7b5ef69d/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Region\")]"}
+COMMAND: GET /session/a2dbb14dac29732dadc4205c7b5ef69d/element/96611e26-e8ed-4a91-8b79-6be9f19a4cc8/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field local SSD" time="0.069">
+      <system-out><![CDATA[
+COMMAND: POST /session/a2dbb14dac29732dadc4205c7b5ef69d/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Local SSD\")]"}
+COMMAND: GET /session/a2dbb14dac29732dadc4205c7b5ef69d/element/1fc77c64-d906-4f31-933d-49ade2821452/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify the correspondence of the data of the following field commitment term" time="0.068">
+      <system-out><![CDATA[
+COMMAND: POST /session/a2dbb14dac29732dadc4205c7b5ef69d/element - {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+RESULT: {"using":"xpath","value":"//md-list-item/div[contains(text(), \"Commitment term\")]"}
+COMMAND: GET /session/a2dbb14dac29732dadc4205c7b5ef69d/element/3c51b7bb-077f-4a62-bd3c-66b8da0ad39f/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="Verify that the rental amount per month equals with the amount received when passing the test manually" time="0.06">
+      <system-out><![CDATA[
+COMMAND: POST /session/a2dbb14dac29732dadc4205c7b5ef69d/element - {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+RESULT: {"using":"xpath","value":"//h2[@class=\"md-title\"]//b[@class=\"ng-binding\"]"}
+COMMAND: GET /session/a2dbb14dac29732dadc4205c7b5ef69d/element/ce1a463d-a7b1-4b72-995d-af5dcff69eb2/text - {}
+RESULT: {}
+COMMAND: DELETE /session/a2dbb14dac29732dadc4205c7b5ef69d - {}
+RESULT: {}
+COMMAND: DELETE /session/a2dbb14dac29732dadc4205c7b5ef69d - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

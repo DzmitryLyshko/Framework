@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T06:42:25" time="34.49" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="Verify that Total Estimated Monthly Cost in the letter equals to the cost in the calculator" time="0.002">
+      <system-out><![CDATA[
+COMMAND: DELETE /session/fb708d10-ae9e-495d-83db-7b796322a3f8 - {}
+RESULT: {}
+COMMAND: DELETE /session/fb708d10-ae9e-495d-83db-7b796322a3f8 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

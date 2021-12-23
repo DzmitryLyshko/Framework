@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T02:56:08" time="60.416" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="chrome.96_0_4664_110.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="60.006">
+      <failure/>
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;pricing calculator page scenarios &quot;before all&quot; hook for &quot;Verify that Total Estimated Monthly Cost in the letter equals to the cost in the calculator&quot;&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Study\EPAM\Framework\test\specs\test4.js)"/>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "pricing calculator page scenarios "before all" hook for "Verify that Total Estimated Monthly Cost in the letter equals to the cost in the calculator"" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Study\EPAM\Framework\test\specs\test4.js)
+    at createTimeoutError (C:\Study\EPAM\Framework\node_modules\mocha\lib\errors.js:498:15)
+    at Hook.Runnable._timeoutError (C:\Study\EPAM\Framework\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (C:\Study\EPAM\Framework\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

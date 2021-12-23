@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T06:45:30" time="29.776" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="28.248">
+      <failure/>
+      <error message="Can't call click on element with selector &quot;//div[@class=&quot;gs-title&quot;]//*[text()=&quot;Google Cloud Platform Pricing Calculator&quot;]&quot; because element wasn't found"/>
+      <system-err><![CDATA[
+Error: Can't call click on element with selector "//div[@class="gs-title"]//*[text()="Google Cloud Platform Pricing Calculator"]" because element wasn't found
+    at implicitWait (C:\Study\EPAM\Framework\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+    at async Element.elementErrorHandlerCallbackFn (C:\Study\EPAM\Framework\node_modules\webdriverio\build\middlewares.js:20:29)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async PricingCalculatorPage.choosePricingCalculator (C:\Study\EPAM\Framework\lib\pricing_calculator_page.js:82:5)
+    at async Context.<anonymous> (C:\Study\EPAM\Framework\test\specs\test4.js:20:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T02:56:14" time="58.565" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test4.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="56.555">
+      <failure/>
+      <error message="element (&quot;#ifmail&quot;) still not existing after 20000ms"/>
+      <system-err><![CDATA[
+Error: element ("#ifmail") still not existing after 20000ms
+    at C:\Study\EPAM\Framework\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async Element.elementErrorHandlerCallbackFn (C:\Study\EPAM\Framework\node_modules\webdriverio\build\middlewares.js:24:32)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async Element.elementErrorHandlerCallbackFn (C:\Study\EPAM\Framework\node_modules\webdriverio\build\middlewares.js:24:32)
+    at async Element.wrapCommandFn (C:\Study\EPAM\Framework\node_modules\@wdio\utils\build\shim.js:131:29)
+    at async YopmailPage.switchToMailIFrame (C:\Study\EPAM\Framework\lib\yopmail_page.js:35:5)
+    at async Context.<anonymous> (C:\Study\EPAM\Framework\test\specs\test4.js:54:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-23T15:07:07" time="65.049" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="firefox.95_0_2.windows"/>
+      <property name="file" value=".\test\specs\test3.js"/>
+    </properties>
+    <testcase classname="firefox.95_0_2.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="60.012">
+      <failure/>
+      <error message="Timeout of 60000ms exceeded. The execution in the test &quot;pricing calculator page scenarios &quot;before all&quot; hook for &quot;Verify the correspondence of the data of the following field: VM Class&quot;&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Study\EPAM\Framework\test\specs\test3.js)"/>
+      <system-err><![CDATA[
+Error: Timeout of 60000ms exceeded. The execution in the test "pricing calculator page scenarios "before all" hook for "Verify the correspondence of the data of the following field: VM Class"" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Study\EPAM\Framework\test\specs\test3.js)
+    at createTimeoutError (C:\Study\EPAM\Framework\node_modules\mocha\lib\errors.js:498:15)
+    at Hook.Runnable._timeoutError (C:\Study\EPAM\Framework\node_modules\mocha\lib\runnable.js:431:10)
+    at Timeout.<anonymous> (C:\Study\EPAM\Framework\node_modules\mocha\lib\runnable.js:246:24)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>  </testcase>
+  </testsuite>
+</testsuites>

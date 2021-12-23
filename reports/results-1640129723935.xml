@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pricing calculator page scenarios" timestamp="2021-12-22T01:35:28" time="32.903" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pricing calculator page scenarios"/>
+      <property name="capabilities" value="chrome.96_0_4664_110.windows"/>
+      <property name="file" value=".\test\specs\test3.js"/>
+    </properties>
+    <testcase classname="chrome.96_0_4664_110.windows.pricing_calculator_page_scenarios" name="before all hook for pricing calculator page scenarios" time="32.318">
+      <failure/>
+      <error message="element not interactable&#xA;  (Session info: chrome=96.0.4664.110)"/>
+      <system-err><![CDATA[
+Backtrace:
+	Ordinal0 [0x00626903+2517251]
+	Ordinal0 [0x005BF8E1+2095329]
+	Ordinal0 [0x004C2710+1058576]
+	Ordinal0 [0x004EE324+1237796]
+	Ordinal0 [0x004E4037+1196087]
+	Ordinal0 [0x005064D3+1336531]
+	Ordinal0 [0x004E3A36+1194550]
+	Ordinal0 [0x005065BA+1336762]
+	Ordinal0 [0x00515BBF+1399743]
+	Ordinal0 [0x0050639B+1336219]
+	Ordinal0 [0x004E27A7+1189799]
+	Ordinal0 [0x004E3609+1193481]
+	GetHandleVerifier [0x007B5904+1577972]
+	GetHandleVerifier [0x00860B97+2279047]
+	GetHandleVerifier [0x006B6D09+534521]
+	GetHandleVerifier [0x006B5DB9+530601]
+	Ordinal0 [0x005C4FF9+2117625]
+	Ordinal0 [0x005C98A8+2136232]
+	Ordinal0 [0x005C99E2+2136546]
+	Ordinal0 [0x005D3541+2176321]
+	BaseThreadInitThunk [0x7675FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76EC7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76EC7A6E+238]
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
